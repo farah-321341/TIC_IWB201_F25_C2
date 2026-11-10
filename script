@@ -1,0 +1,45 @@
+function handleFollowUp(){
+	let selectedCars = document.querySelectorAll('.car-checkbox:checked');
+	if (selectedCars.length === 0){
+		alert("!عذراً, يجب عبيك اختيار سيارة واحدة على الأقل للمتابعة");
+		return;
+	}
+
+	let formContainer = document.getElementById('myForm');
+	if (formContainer) {
+        formContainer.style.display = "block";
+        fun
+	}
+}
+function validateForm(event){
+	event.preventDefault();
+	let fullName = document.getElementById('fullName').value;
+	let arabicPattern = /^[\u0600-\u06FF\s]+$/;
+	if (fullName !== "" && !arabicPattern.test(fullName)) {
+		alert("!خطأ: الايم الكامل يجب أن يحتوي على أحرف هجائية عربية فقط");
+		return false;
+	}
+let nationalId = document.getElementById('nationalId').value;
+let nationalPattern = /^(0[1-9]|1[0-4])[0-9]{9}$/;
+if (!nationalPattern.test(nationalId)) {
+	alert("(14-01)!خطأ: الرقم الوطني إلزامي, مكون من 11 خانة , ويبدأ بمحافظة صحيحة");
+	return false;
+}
+let startDate = document.getElementById('startDate').value;
+let endDate = document.getElementById('endDate').value;
+if (!srartDate || !endDate) {
+	alert("!خطأ: تاريخ بداية ونهاية التأجير حقول إلزامية");
+	return false;
+}
+if (new Date(endDate)<= new Date(startDate)) {
+	alert("!خطأ: تاريخ نهاية التأجير يجب أن يكون لاحقاً لتاريخ البداية");
+	return false;
+}
+let mobile = document.getElementById('mobile').value;
+let mobilePattern = /^09(3|4|5|6|8|9)[0-9]{7}$/;
+if(mobilen !== "" && !mobilePattern.test(mobile)) {
+	alert("خطأ: رقم الموبايل غير صحيح! يجب أن يطابق شبكات Syriatel أو MTN (09 : مثالxxxxxxx). ");
+	return false;
+}
+alert("!تم التحقق بنجاح و تأكيد البيانات المطلوبة");
+return true;

@@ -1,0 +1,125 @@
+body {   color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    direction: rtl;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.car-details {
+    background-color: #f9f9f9;
+    font-size: 14px;
+  }
+ 
+h4{
+  color: #007bff;
+  font-size: 28px;
+}
+.bullet-center{
+  list-style-type: center;
+  color: #555;
+  margin-bottom: 15px;
+}
+body{background-color: #f4f6f9; font-family: Arial, sans-serif; margin: 20px; text-align: right;}
+nav {background:#009fbb; padding: 10px; margin-bottom: 20px;}
+nav a { color:white; margin-left: 15px; text-decoration:none; font-weight: bold; padding:8px 16px; background-color:rgba(255, 255, 255, 0.2);
+transition: background 0.3s; }
+.container { max-width:800px; margin:auto; border:1px solid #ddd; padding:20px; border-radius:8px;}
+nav a:hover{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.general-info{
+  font-size: 20px;
+  line-height:1.6;
+}
+.brand-name{
+  color: #007bff;
+  font-weight: bold;
+}
+.car-details {
+  display: none;
+  background-color: #fcfcfc;
+}
+.slider-wrapper{
+  padding:15px;
+  text-align: center;
+  font-size: 16px;
+  color:#444;
+  line-height:1.8;
+  border-top: 1px dashed #ddd; 
+}
+.slider-wrapper strong {
+  color: #000;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.show-btn{
+  color:#009fbb ;
+  position: relative;
+  width:40px;
+  height:20px;
+  background-color: #009fbb;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0;
+  display: inline-block;
+  vertical-align: middle;
+  transition: background-color 0.3s;
+
+}
+.show-btn::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.show-btn:hover{
+  background-color: #00849b;
+}
+.show-btn.active{
+background-color:#00849b ;
+}
+.show-btn.active::after {
+  transform: translateX(20px);
+}
+#myForm {
+  display: none;
+  margin-top: 20px;
+  padding:15px;
+  border:1px solid #ccc;
+  background-color: #fcfcfc;
+  border-radius: 5px;
+}
+#btn{
+  padding:8px 20px;
+  background-color: #007bff;
+  color:white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#btn:hover {
+  background-color: #0056b3;
+}
